@@ -1,87 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Contact form for my portfolio.">
-    <title>Contact Me</title>
+<meta charset="UTF-8">
+<meta name="description" content="Contact">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1 style="color: darkblue;">Get In Touch</h1>
-        <p>Fill in this form to send me a message.</p>
-    </header>
+<header><h1>Contact</h1></header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="academic.html">Academic Record</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="academic.html">Academic</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+</ul>
+</nav>
 
-    <main>
-        <form action="#" method="post" style="border: 2px solid black; padding: 10px;">
-            
-            <fieldset>
-                <legend>Contact Details</legend>
+<main>
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Full Name" required maxlength="60"><br><br>
+<form action="#" method="post" style="border:2px solid black; padding:10px;">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+<fieldset>
+<legend>Info</legend>
 
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone"><br><br>
+<label>Name:</label>
+<input type="text" required style="padding:5px;"><br>
 
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob"><br><br>
-            </fieldset>
+<label>Email:</label>
+<input type="email" required><br>
 
-            <fieldset>
-                <legend>Message Info</legend>
+<label>Phone:</label>
+<input type="tel"><br>
 
-                <label for="sub">Subject:</label>
-                <select id="sub" name="sub">
-                    <optgroup label="Academic">
-                        <option value="grades">Grades</option>
-                        <option value="projects">Projects</option>
-                    </optgroup>
-                    <optgroup label="Other">
-                        <option value="general">General</option>
-                    </optgroup>
-                </select><br><br>
+<label>Age:</label>
+<input type="number" min="1" max="100"><br>
 
-                <label for="level">Urgency Level:</label>
-                <input type="range" id="level" name="level" min="1" max="10"><br><br>
+<label>Date:</label>
+<input type="date"><br>
 
-                <p>Gender: 
-                    <input type="radio" id="m" name="gender" value="m"><label for="m">Male</label>
-                    <input type="radio" id="f" name="gender" value="f"><label for="f">Female</label>
-                    <input type="radio" id="o" name="gender" value="o"><label for="o">Other</label>
-                </p>
+</fieldset>
 
-                <p>Interests:
-                    <input type="checkbox" id="web" name="int" value="web"><label for="web">Web</label>
-                    <input type="checkbox" id="app" name="int" value="app"><label for="app">Apps</label>
-                    <input type="checkbox" id="ai" name="int" value="ai"><label for="ai">AI</label>
-                </p>
+<fieldset>
+<legend>Message</legend>
 
-                <label for="msg">Message:</label><br>
-                <textarea id="msg" name="msg" style="background-color: lightyellow; font-size: 16px;"></textarea>
-            </fieldset>
+<select>
+<option>General</option>
+<option>Project</option>
+</select>
 
-            <br>
-            <button type="submit" style="padding: 5px; background-color: lightgray;">Submit</button>
-        </form>
-    </main>
+<input type="range" min="1" max="10"><br>
 
-    <footer>
-        <address>Contact: j.thabit@gmail.com</address>
-    </footer>
+<input type="radio" name="g">Male
+<input type="radio" name="g">Female
+<input type="radio" name="g">Other
+
+<br>
+
+<input type="checkbox">Web
+<input type="checkbox">Apps
+<input type="checkbox">AI
+
+<br>
+
+<textarea style="background-color:lightyellow;"></textarea>
+
+</fieldset>
+
+<button type="submit">Send</button>
+
+</form>
+
+</main>
+
+<footer>
+<address>Email: j.thabit@gmail.com</address>
+</footer>
 
 </body>
 </html>
